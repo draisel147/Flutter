@@ -4,6 +4,11 @@ void main() {
   runApp(const MyApp());
 }
 
+//*การกำหนดชื่อแอพใหม่ android --> app --> src --> main --> AndroidManifest.xml
+//*กำหนดชื่อแอพใหม่ใน android:label
+//*และกด run without debug
+//! หมายเหตุสามารถไปดูสไลด์ได้ที่ "D:\flutter pdf" หน้า 11
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -31,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Demo '),
     );
   }
 }
@@ -106,7 +111,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'กดไปกี่ครั้ง:',
+              style: TextStyle(fontSize: 24),
             ),
             Text(
               '$_counter',
